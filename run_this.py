@@ -19,7 +19,7 @@ def add_case(casepath=case_path, rule="test*.py"):
 
 def run_case(all_case, reportpath=report_path):
     '''执行所有的用例, 并把结果写入测试报告'''
-    htmlreport = reportpath + r"/result_" + time.strftime("%Y_%m_%d_%H_%M_%S") + r".html"
+    htmlreport = reportpath + r"/test_result_" + time.strftime("%Y_%m_%d_%H_%M_%S") + r".html"
     print("测试报告生成地址：%s"% htmlreport)
     fp = open(htmlreport, "wb")
     runner = HTMLTestRunner_api.HTMLTestRunner(stream=fp,
