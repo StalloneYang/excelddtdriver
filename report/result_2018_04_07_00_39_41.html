@@ -247,8 +247,8 @@ function close_shots(obj) {
 </div>
 <div class='heading'>
 <h1>测试报告</h1>
-<p class='attribute'><strong>开始时间:</strong> 2018-04-07 00:32:27</p>
-<p class='attribute'><strong>耗时:</strong> 0:00:21.722243</p>
+<p class='attribute'><strong>开始时间:</strong> 2018-04-07 00:39:41</p>
+<p class='attribute'><strong>耗时:</strong> 0:00:28.012602</p>
 <p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>1 <span class="tj failCase">Failure</span>2 <span class="tj errorCase">Error</span>1</p>
 
 <p class='description'>用例执行情况</p>
@@ -310,7 +310,7 @@ function close_shots(obj) {
         
 ft1.1: *******正在执行用例：-----  t_001  ----**********
 请求方式：get, 请求url:http://japi.juhe.cn/qqevaluate/qq
-请求params：{'key': '正确的', 'qq': '283340479'}
+请求params：{'qq': '283340479', 'key': '正确的'}
 页面返回信息：
 {"resultcode":"101","reason":"KEY ERROR!","result":[],"error_code":10001}
 检查点-&gt;："reason":"successed!"
@@ -350,7 +350,7 @@ AssertionError: False is not true
         
 pt1.2: *******正在执行用例：-----  t_002  ----**********
 请求方式：get, 请求url:http://japi.juhe.cn/qqevaluate/qq
-请求params：{'key': '错误的', 'qq': '283340479'}
+请求params：{'qq': '283340479', 'key': '错误的'}
 页面返回信息：
 {"resultcode":"101","reason":"KEY ERROR!","result":[],"error_code":10001}
 用例测试结果:   t_002----&gt;pass
@@ -385,7 +385,7 @@ pt1.2: *******正在执行用例：-----  t_002  ----**********
         
 ft1.3: *******正在执行用例：-----  t_003  ----**********
 请求方式：get, 请求url:http://v.juhe.cn/weather/index
-请求params：{'key': 'xxx', 'format': '1', 'dtype': 'json', 'cityname': '上海'}
+请求params：{'format': '1', 'dtype': 'json', 'cityname': '上海', 'key': 'xxx'}
 页面返回信息：{"resultcode":"101","reason":"错误的请求KEY!","result":null,"error_code":10001}
 检查点-&gt;："reason":"successed!"
 返回实际结果-&gt;：{"resultcode":"101","reason":"错误的请求KEY!","result":null,"error_code":10001}

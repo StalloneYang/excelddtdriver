@@ -247,8 +247,8 @@ function close_shots(obj) {
 </div>
 <div class='heading'>
 <h1>测试报告</h1>
-<p class='attribute'><strong>开始时间:</strong> 2018-04-07 00:32:27</p>
-<p class='attribute'><strong>耗时:</strong> 0:00:21.722243</p>
+<p class='attribute'><strong>开始时间:</strong> 2018-04-07 00:49:14</p>
+<p class='attribute'><strong>耗时:</strong> 0:00:21.614237</p>
 <p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>1 <span class="tj failCase">Failure</span>2 <span class="tj errorCase">Error</span>1</p>
 
 <p class='description'>用例执行情况</p>
@@ -385,7 +385,7 @@ pt1.2: *******正在执行用例：-----  t_002  ----**********
         
 ft1.3: *******正在执行用例：-----  t_003  ----**********
 请求方式：get, 请求url:http://v.juhe.cn/weather/index
-请求params：{'key': 'xxx', 'format': '1', 'dtype': 'json', 'cityname': '上海'}
+请求params：{'dtype': 'json', 'key': 'xxx', 'cityname': '上海', 'format': '1'}
 页面返回信息：{"resultcode":"101","reason":"错误的请求KEY!","result":null,"error_code":10001}
 检查点-&gt;："reason":"successed!"
 返回实际结果-&gt;：{"resultcode":"101","reason":"错误的请求KEY!","result":null,"error_code":10001}
@@ -425,7 +425,7 @@ ft1.4: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded'}
 *******正在执行用例：-----  t_004  ----**********
 请求方式：post, 请求url:http://192.168.3.239:88/zentao/user-login.html
 请求params：None
-post请求body类型为：data ,body内容为：{'referer': '', 'password': '123456', 'account': 'admin', 'keepLogin[]': 'on'}
+post请求body类型为：data ,body内容为：{'keepLogin[]': 'on', 'referer': '', 'account': 'admin', 'password': '123456'}
 Traceback (most recent call last):
   File "E:\Python36\lib\site-packages\ddt.py", line 145, in wrapper
     return func(self, *args, **kwargs)
